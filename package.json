@@ -1,0 +1,36 @@
+{
+  "name": "token-transaction-visualizer",
+  "version": "1.0.0",
+  "description": "Visualizes ERC20 token transactions as SVG symbols",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "fetch": "ts-node src/fetchTransactions.ts",
+    "generate": "ts-node src/generateSvg.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "svg",
+    "generator",
+    "ethereum",
+    "erc20",
+    "viem",
+    "base"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.4",
+    "form-data": "^4.0.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "viem": "^2.7.9"
+  }
+}
