@@ -60,49 +60,12 @@ class SvgGenerator {
     )}"/>
     </g>
     <!-- Minus symbol (Sell) -->
-    
-<g id="m" stroke-width="${symbolStrokeWidth}" stroke="#FF0000">
-  <line x1="${Math.floor(-symbolSize / 3)}" y1="0" x2="${Math.floor(
+    <g id="m" stroke-width="${symbolStrokeWidth}" stroke="#FF0000">
+      <line x1="${Math.floor(-symbolSize / 3)}" y1="0" x2="${Math.floor(
       symbolSize / 3
     )}" y2="0"/>
-</g>
-    
-    
-    <!-- Animation for pop-in effect -->
-    <style type="text/css">
-      @keyframes popIn {
-        0% {
-          opacity: 0;
-          transform: scale(0);
-        }
-        70% {
-          opacity: 1;
-          transform: scale(1.2);
-        }
-        100% {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-      
-      // .symbol {
-      //   opacity: 0;
-      //   transform-origin: center;
-      //   animation: popIn 0.2s forwards;
-      // }
-      
-      /* Generate animation delays for the first 250 symbols, then start reusing delays */
+    </g>
 `;
-
-    // Add animation delay styles for each symbol
-    // Using nth-child selectors which are widely supported
-    // let count = 0;
-    // for (let i = 1; i <= transactions.length; i++) {
-    //   svg += `      .symbol:nth-child(${i}) { animation-delay: calc(${
-    //     count % 1 === 0 ? i : count
-    //   } * ${animationDelay}s); }\n`;
-    //   count++;
-    // }
 
     // Close the style tag and defs
     svg += `    </style>
