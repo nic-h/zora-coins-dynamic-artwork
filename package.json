@@ -1,0 +1,27 @@
+{
+  "name": "timeframe_zora_coin",
+  "version": "1.0.0",
+  "description": "An application that monitors an ERC20 token on Base and visualizes buy/sell transactions as symbols in an SVG image.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pinata/sdk": "^2.1.0",
+    "@zoralabs/coins-sdk": "^0.1.1",
+    "dotenv": "^16.5.0",
+    "ipfs-http-client": "^60.0.1",
+    "pinata-web3": "^0.5.4",
+    "puppeteer": "^24.9.0",
+    "sharp": "^0.34.2",
+    "viem": "^2.30.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
